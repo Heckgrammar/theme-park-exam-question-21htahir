@@ -19,6 +19,22 @@
             // 2: 10 people
             // 3: 6 people
             // Commit your changes and add screnshot evidence of your program running to the Readme
+                const decimal ticketPrice = 15.00m;
+                const decimal discount = 5.00m;
+
+                int numberOfPeople;
+
+                Console.Write("Enter the number of people in the group: ");
+                numberOfPeople = int.Parse(Console.ReadLine());
+
+                decimal totalCharge = numberOfPeople * ticketPrice;
+
+                if (numberOfPeople >= 6)
+                {
+                    totalCharge -= discount;
+                }
+
+                Console.WriteLine("The total charge for the group is: £" + totalCharge);
 
         }
     }
