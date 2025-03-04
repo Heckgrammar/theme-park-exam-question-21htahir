@@ -25,7 +25,7 @@
                 int numberOfPeople;
 
                 Console.Write("Enter the number of people in the group: ");
-                numberOfPeople = int.Parse(Console.ReadLine());
+                numberOfPeople = Convert.ToInt32(Console.ReadLine());
 
                 decimal totalCharge = numberOfPeople * ticketPrice;
 
